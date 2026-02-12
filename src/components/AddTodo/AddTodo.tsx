@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import * as S from './AddTodo.styles';
-import { TodoContext } from '../../contexts/TodoContext';
-import { useContext } from 'react';
+import { useTodos } from '../../contexts/TodoContext';
+
+
 
 
 const AddTodo: React.FC = () => {
-  const { addTodo } = useContext(TodoContext);
+  
+  const { addTodo } = useTodos();
   const [text, setText  ] = useState('');
   const [error, setError] = useState('');
 

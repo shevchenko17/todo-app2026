@@ -112,7 +112,7 @@ export const TodoProvider: React.FC<TodoProviderProps> = ({ children }) => {
   };
 
   return (
-    <TodoContext.Provider value={contextValue}> // мозги тудушки
+    <TodoContext.Provider value={contextValue}>  
       {children}
     </TodoContext.Provider>
   );
